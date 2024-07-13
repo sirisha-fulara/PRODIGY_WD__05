@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search city">
+            <button type="submit" id="searchSubmit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg></button>
+        </div>
+        <div id="weather">
+            <div class="city-info">
+                <p class="heading">New York</p>
+                <p class="feelsLike">Feels Like- 30°</p>
+                <img src="cloudy.png" alt="" class="weather-image">
+            </div>
+            <div class="weather-info">
+                34°
+            </div>
+            
+        </div>
+        
+        <hr width="900px">
+        <div class="more-info">
+
+            <!-- Humidity -->
+            <div class="humidity" style="color: rgba(255, 255, 255, 0.774)" ;>
+                <img src="humidity.png" alt="" width="20" height="20">
+                Humidity
+                <p class="humidPercent">53 %</p>
+            </div>
+
+            <!-- Wind speed -->
+            <div class="windspeed" style="color: rgba(255, 255, 255, 0.774);">
+                <img src="storm.png" alt="" width="20" height="20">
+                Wind Speed
+                <p class="wspeedValue">5.66 km/hr</p>
+            </div>
+            
+            <!-- pressure -->
+            <div class="pressure" style="color: rgba(255, 255, 255, 0.774);">
+                <img width="20" height="20" src="pressure-gauge.png" alt="">
+                Pressure
+                <p class="pressureValue">5.66 hPa</p>
+            </div>
+
+            <!-- Max min temp -->
+            <div class="maxminTemp" style="color: rgba(255, 255, 255, 0.774);">
+                <img width="20" height="20" src="temperature.png" alt="">
+                Max/Min Temp.
+                <p class="max-minTemp">23°/20°</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

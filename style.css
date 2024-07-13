@@ -1,0 +1,123 @@
+body {
+    margin: 0px;
+    font-family: "Jost", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.container {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container::before {
+    content: " ";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background: url("background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(3.5px);
+}
+
+.search-box {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+}
+
+#search {
+    width: 500px;
+    border: 0px;
+    border-radius: 20px;
+    height: 30px;
+    padding-left: 10px;
+    background-color: rgba(255, 255, 255, 0.712);
+}
+
+#searchSubmit {
+    height: 35px;
+    width: 35px;
+    border: 0px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.712);
+}
+
+#weather {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    display: none;
+    
+}
+
+.city-info {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.heading {
+    font-size: 3.5rem;
+    margin: 0px;
+}
+
+.feelsLike {
+    font-size: 1.5rem;
+    margin: 0px;
+}
+
+.weather-image {
+    height: 150px;
+    width: 150px;
+}
+
+.weather-info {
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.712);
+    margin-bottom: 0px;
+}
+.max-minTemp{
+    font-size: 2rem;
+    margin-left: 965px;
+    margin-top: 0px;
+
+}
+hr {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.more-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    display: none;
+}
+
+.more-info p {
+    margin: 0px;
+
+}
+
+.humidPercent {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.wspeedValue {
+    font-size: 1.5rem;
+    color: white;
+}
+.pressureValue {
+    font-size: 1.5rem;
+    color: white;
+}
+.max-minTemp {
+    font-size: 1.5rem;
+    color: white;
+}
